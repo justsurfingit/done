@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
-const LandingPage = () => {
+const LandingPage = ({ darkMode }) => {
   return (
-    <div className="landing-page">
+    <div className={`landing-page ${darkMode ? "dark-theme" : ""}`}>
       <div className="hero-section">
         <Container>
           <Row className="align-items-center min-vh-100">
@@ -21,11 +21,30 @@ const LandingPage = () => {
                   Discover premium properties in top locations. Your perfect
                   home is just a click away.
                 </p>
-                <Link to="/explore">
-                  <Button size="lg" className="explore-btn">
-                    Explore Properties
-                  </Button>
-                </Link>
+
+                <div className="d-flex flex-column flex-md-row gap-3">
+                  <Link to="/customer-login">
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Button size="lg" className="explore-btn">
+                        Explore as Customer
+                      </Button>
+                    </motion.div>
+                  </Link>
+
+                  <Link to="/dealer-login">
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Button size="lg" className="dealer-btn">
+                        Join as Dealer
+                      </Button>
+                    </motion.div>
+                  </Link>
+                </div>
               </motion.div>
             </Col>
             <Col lg={6} className="d-none d-lg-block">

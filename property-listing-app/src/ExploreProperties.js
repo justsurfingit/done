@@ -153,7 +153,11 @@ function ExploreProperties({ darkMode, toggleDarkMode }) {
                   className="price-slider mb-3"
                 />
                 <div className="text-center">
-                  <Badge bg="primary" className="price-badge">
+                  <Badge
+                    bg="primary"
+                    className="price-badge "
+                    style={{ padding: "15px" }}
+                  >
                     <FaDollarSign /> Maximum: ${priceRange.toLocaleString()}
                   </Badge>
                 </div>

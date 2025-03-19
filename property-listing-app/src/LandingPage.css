@@ -56,3 +56,23 @@
   background: #2d2d2d;
   color: #f8f9fa;
 }
+.dealer-btn {
+  background-color: #2a9d8f;
+  border: none;
+  padding: 0.8rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.dealer-btn:hover {
+  background-color: #264653;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .dealer-btn {
+  background-color: #2a9d8f;
+}
+
+.dark-theme .dealer-btn:hover {
+  background-color: #38b2a0;
+}

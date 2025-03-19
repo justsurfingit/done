@@ -1,0 +1,113 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+.dark-theme.login-page {
+  background: linear-gradient(135deg, #121212 0%, #2d2d2d 100%);
+  color: #f8f9fa;
+}
+
+.dealer-login {
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+}
+
+.dark-theme.dealer-login {
+  background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%);
+}
+
+.login-card {
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dark-theme .login-card {
+  background-color: #2d2d2d;
+  color: #f8f9fa;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.login-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.avatar-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #3a0ca3;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dealer-avatar {
+  background-color: #2a9d8f;
+}
+
+.input-group-text {
+  background-color: transparent;
+  border-right: none;
+}
+
+.form-control {
+  border-left: none;
+  padding-left: 0;
+}
+
+.dark-theme .input-group-text,
+.dark-theme .form-control {
+  background-color: #3d3d3d;
+  border-color: #555;
+  color: #f8f9fa;
+}
+
+.dark-theme .form-control::placeholder {
+  color: #adb5bd;
+}
+
+.home-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.home-link:hover {
+  color: #3a0ca3;
+}
+
+.dark-theme .home-link {
+  color: #adb5bd;
+}
+
+.dark-theme .home-link:hover {
+  color: #f8f9fa;
+}
+
+.signup-link {
+  color: #3a0ca3;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-link:hover {
+  color: #4361ee;
+  text-decoration: underline;
+}
+
+.dark-theme .signup-link {
+  color: #90caf9;
+}
+
+.dark-theme .signup-link:hover {
+  color: #bbdefb;
+}
