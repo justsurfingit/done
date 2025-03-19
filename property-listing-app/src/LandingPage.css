@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+.landing-page {
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-page h1,
+.landing-page h2,
+.landing-page h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  padding: 2rem 0;
+}
+
+.explore-btn {
+  background-color: #3a0ca3;
+  border: none;
+  padding: 0.8rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #4361ee;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+}
+
+/* Dark mode styles */
+.dark-theme .hero-section {
+  background: linear-gradient(135deg, #121212 0%, #2d2d2d 100%);
+  color: #f8f9fa;
+}
+
+.dark-theme .feature-card {
+  background: #2d2d2d;
+  color: #f8f9fa;
+}
