@@ -5,12 +5,12 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import ExploreProperties from "./ExploreProperties";
-import LandingPage from "./LandingPage";
-import CustomerLogin from "./pages/CustomerLogin";
-import DealerLogin from "./pages/DealerLogin";
-import AdminDashboard from "./pages/AdminDashboard";
-import AddPropertyForm from "./pages/AddPropertyForm";
+import ExploreProperties from "./pages/ExploreProperties/ExploreProperties";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import CustomerLogin from "./pages/Login/CustomerLogin";
+import DealerLogin from "./pages/Login/DealerLogin";
+import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
+import AddPropertyForm from "./pages/AddPropertyForm/AddPropertyForm";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
