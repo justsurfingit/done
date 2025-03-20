@@ -38,7 +38,7 @@ function ExploreProperties({ darkMode, toggleDarkMode }) {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5000/api/properties")
+      .get("https://testbackend-8.onrender.com/api/properties")
       .then((res) => {
         setProperties(res.data);
         setFilteredProperties(res.data);
